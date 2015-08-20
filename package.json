@@ -1,0 +1,25 @@
+{
+  "name": "linter-jolie",
+  "description": "A Jolie linter for Atom",
+  "version": "0.1.0",
+  "main": "./lib/main",
+  "dependencies": {
+    "atom-linter": "^3.1.0"
+  },
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
+  },
+  "homepage": "https://github.com/fmontesi/linter-jolie",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fmontesi/linter-jolie.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fmontesi/linter-jolie/issues"
+  }
+}
