@@ -1,11 +1,14 @@
 helpers = require 'atom-linter'
-{BufferedProcess} = require 'atom'
+{ BufferedProcess } = require 'atom'
 
 executablePath = "jolie"
 pattern = ".+:(?<file>[^:]+):(?<line>\\d+):\\s*(?<type>error|warning)\\s*:(?<message>.+)"
 
 module.exports =
   config: {}
+
+  activate: ->
+    require( "atom-package-deps" ).install( "linter-jolie" );
 
   provideLinter: ->
     provider =
