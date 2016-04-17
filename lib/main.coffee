@@ -2,7 +2,7 @@ helpers = require 'atom-linter'
 { BufferedProcess } = require 'atom'
 
 executablePath = "jolie"
-pattern = ".+:(?<file>[^:]+):(?<line>\\d+):\\s*(?<type>error|warning)\\s*:(?<message>.+)"
+pattern = ".+:\\s*(?<file>[^:]+):\\s*(?<line>\\d+):\\s*(?<type>error|warning)\\s*:(?<message>.+)"
 
 module.exports =
   config: {}
