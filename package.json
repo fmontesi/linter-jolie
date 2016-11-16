@@ -1,7 +1,7 @@
 {
   "name": "linter-jolie",
   "description": "A Jolie linter for Atom",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "main": "./lib/main",
   "dependencies": {
     "atom-linter": "^3.1.0",
