@@ -17,7 +17,7 @@ module.exports =
       lintOnFly: true
       lint: ( editor ) ->
         return helpers.exec( executablePath, [ "--check", editor.getPath() ], { stream: "both" } ).then ( data ) ->
-          helpers.parse( data.stderr, pattern, { filePath: editor.getPath() } )
+          helpers.parse( data.stderr, pattern )
             .map ( issue ) ->
               [ [ lineStart, colStart ], [ lineEnd, colEnd ] ] = issue.range
               issue.range = helpers.rangeFromLineNumber editor, lineStart, colStart
