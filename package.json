@@ -1,7 +1,7 @@
 {
   "name": "linter-jolie",
   "description": "A Jolie linter for Atom",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "main": "./lib/main",
   "configSchema": {
     "jolieExecutablePath": {
